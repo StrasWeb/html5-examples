@@ -1,0 +1,23 @@
+<!Doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Exemples d'utilisation de HTML5</title>
+    <script>
+        /*global navigator*/
+        /*jslint browser: true */
+        var geoloc = function (position) {
+            'use strict';
+            document.getElementById('lat').textContent = position.coords.latitude;
+            document.getElementById('long').textContent = position.coords.longitude;
+        };
+        navigator.geolocation.getCurrentPosition(geoloc);
+    </script>
+</head>
+<body>
+    <ul>
+    <li>Latitude : <span id="lat"></span></li>
+    <li>Longitude : <span id="long"></span></li>
+    </ul>
+</body>
+</html>

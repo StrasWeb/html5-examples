@@ -1,0 +1,16 @@
+<!Doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Exemples d'utilisation de HTML5</title>
+</head>
+<body itemscope itemtype="http://schema.org/Person">
+    <button id="add">Ajouter un élément à l'historique</button><br/>
+    <script>
+        document.getElementById('add').addEventListener('click', function () {
+            var stateObj = { foo: "bar" };
+            history.pushState(stateObj, 'StrasWeb', 'what.html');
+        }, true);
+    </script>
+</body>
+</html>

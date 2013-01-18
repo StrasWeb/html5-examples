@@ -1,0 +1,21 @@
+<!Doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Exemples d'utilisation de HTML5</title>
+</head>
+<body>
+    <input id="info" type="text" /><input type="submit" value="Enregistrer" id="store"/>
+    <script>
+        /*jslint browser: true */
+        if (localStorage.info) {
+            document.getElementById('info').value = localStorage.info;
+        }
+        document.getElementById('store').addEventListener('click', function (e) {
+            'use strict';
+            e.preventDefault();
+            localStorage.info = document.getElementById('info').value;
+        }, true);
+    </script>
+</body>
+</html>

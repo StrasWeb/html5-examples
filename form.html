@@ -1,0 +1,29 @@
+<!Doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Exemples d'utilisation de HTML5</title>
+</head>
+<body>
+    <form>
+        <datalist id="mylist">
+        <option>Cathédrale</option>
+        <option>Chateau</option>
+        <option>Catacombe</option>
+        </datalist>
+        <ul>
+    <li>Sélectionné automatiquement : <input autofocus /><br/></li>
+    <li>Placeholder : <input placeholder="Remplissez-moi !" /></li>
+    <li>Requis : <input required list="mylist"/></li>
+    <li>Recherche <small>(WebKit uniquement)</small> : <input type="search"/></li>
+    <li>E-mail : <input type="email"/></li>
+    <li>Slider <small>(pas Firefox)</small> : <input type="range"/></li>
+    <li>Nombre <small>(pas Firefox)</small> : <input type="number"/></li>
+    <li>Date <small>(pas Firefox)</small> : <input type="date"/></li>
+    <li>Couleur <small>(Opera et Chrome uniquement)</small> : <input type="color"/></li>
+    <li><keygen keytype="rsa" name="key"></li>
+    </ul>
+    <input type="submit" />
+    </form>
+</body>
+</html>
